@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.51 51.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: .1em;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g class="cls-2">
+    <text class="cls-1" transform="translate(0 36.03)"><tspan x="0" y="0">ORBITZ</tspan></text>
+  </g>
+</svg>
