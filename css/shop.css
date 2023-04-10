@@ -1,0 +1,534 @@
+/* 1. General Styles */
+
+body {
+    color: #000000;
+    font-family: Helvetica, 'Sanchez', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* 2. Main Navigation - mobile */
+
+#main-nav button {
+   width: 2.5rem;
+   height: 1.5rem;
+   background: url(../images/burger-menu.svg) no-repeat center;
+   margin-top: 0.9375rem;
+   margin-bottom: 1.25rem;
+   transition: all .5s ease;
+   border: 0;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+   display: none; /* 넓게 펼친 네비게이션 안보이게 설정 */
+   background-color: #DF5D5D;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+} /* 버거 메뉴 토글 시 박스로 펼쳐 보여준다는 의미*/
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 0.625rem 0 0.625rem 0;
+   text-align: center;
+   color: #fff;
+}
+
+#main-nav ul li a:hover {
+   color: #000000;
+   cursor: pointer;
+}
+
+#logo{
+   width: 13.125rem;
+   margin-top: 0.625rem;
+   margin-bottom: 1.5625rem;
+   margin-left: 1.875rem;
+}
+
+/* 2. Main Navigation - tablet(48rem) sized screen */
+
+@media screen and (min-width: 48rem) {
+
+   #sticky-nav-con {
+      position: sticky;
+      background-color: #ffffff;
+      top: 0rem;
+      z-index: 1; 
+   }
+
+   #burger-con {
+       margin-top: 1.25rem;
+       margin-bottom: 1.25rem;
+       display: none; /* 넓게 펼친 네비게이션 안보이게 설정 */
+       background-color: #ffffff;
+   }
+
+   #main-nav ul li  {
+       padding: 0.625rem 0.625rem 0.625rem 0;
+   }
+
+   #main-nav ul li a {
+       color: #707070;
+   }
+
+   #main-nav ul li a:hover {
+       color: #DF5D5D;
+       font-weight: 700;
+   }
+
+   #main-nav ul li:last-child {
+       padding: 0.625rem 0rem 0.625rem 0;
+   }
+
+    #burger-menu {
+       grid-row: 1/1;
+    }
+
+   #button {
+       display: none;
+    }
+ 
+    #logo {
+       order: -1;
+       width: 13.125rem;
+       margin-top: 1.875rem;
+       margin-bottom: 1.25rem;
+       margin-left: 0rem;
+    }
+
+    #burger-con {
+       display: block;
+       font-size: 0.75rem;
+    }
+ 
+    #burger-con ul li, #burger-con ul li:first-child {
+       border: none;
+       display: inline;
+    }
+ 
+    #main-nav ul li a {
+       display: inline;
+    }
+ 
+    #burger-con ul li {
+       margin-right: 0.625rem;
+    }
+ 
+    #burger-con ul li:last-child {
+       margin-right: 0;
+    }
+ 
+    #main-nav {
+       margin-top: 1.875rem;
+       margin-bottom: 1.25rem;
+       margin-left: 0rem;
+    }
+
+    #main-header {
+       height: 5.9375rem;
+    }
+}
+
+
+/* 2. Main-navigation - Desktop (75rem) Sized Screens */
+
+@media screen and (min-width: 75rem) {
+
+   #main-nav {
+      margin-top: 3%;
+      /* margin-bottom: 2%; */
+      margin-left: 0rem;
+      padding: 0rem;
+   }
+
+   #logo {
+       margin-left: 1.875rem;
+       margin-top: 2.1875rem;
+   }
+
+   #burger-con ul li {
+      /* margin-left: 0rem; */
+      font-size: 1rem;
+      padding-right: 1.25rem;
+   }
+
+   #burger-con {
+      margin-top: 1.75rem;
+   }
+}
+
+
+/* 3. Hero */
+
+#hero img {
+    grid-column: 1/-1;
+    /* stretch image across all 3 grid columns */
+    grid-row: 1/1;
+    /* set the image to stay in first row, so overlap can happen */
+    justify-self: center;
+    /* make sure the image stays centered at xl screen sizes */
+}
+
+#hero .grid-con {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    margin: 0;
+}
+
+#hero-main {
+    object-fit: cover;
+}
+
+#hero-text h3 {
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 0.9375rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero-text p {
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 48rem) {
+    #hero-main {
+        object-fit: cover;
+    }
+    
+    #hero-text h3 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: #fff;
+        padding-top: 3.125rem;
+        margin-bottom: 0.9375rem;
+    }
+    
+    #hero-text p {
+        font-size: 1.25rem;
+        color: #fff;
+        font-weight: 100;
+        line-height: 1.5625rem;
+    }
+ }
+
+ @media screen and (min-width: 75rem) {
+    #hero-main {
+        object-fit: cover;
+    }
+    
+    #hero-text h3 {
+        font-size: 3.125rem;
+        font-weight: 300;
+        color: #fff;
+        padding-top: 6.25rem;
+    }
+    
+    #hero-text p {
+        font-size: 1.875rem;
+        color: #fff;
+        font-weight: 100;
+        line-height: 2.5rem;
+    }
+ }
+
+ /* 4. Gallery */
+
+ #gallery-box-1, #gallery-box-2, #gallery-box-3, #gallery-box-4  {
+    margin-top: 3.125rem;
+ }
+
+ .can {
+    transition: all 0.3s linear;
+ }
+
+ .can:hover {
+    transform: scale(1.3);
+ }
+
+ .item p {
+    font-size: 0.4375rem;
+    color: #CF6666;
+    padding-top: 0.3125rem;
+    text-align: center;
+ }
+
+ .item h3, .item h4 {
+    font-size: 0.625rem;
+    font-weight: 100;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.4375rem;
+    text-align: center;
+ }
+
+ .item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+ }
+
+ .button {
+    width: 4.0625rem;
+    height: 1.25rem;
+    background-color: #A5D5E3;
+    border: none;
+    border-radius: 0.625rem;
+    color: #fff;
+    font-size: 0.625rem;
+    text-align: center;
+    align-self: center;
+ }
+
+ button:hover {
+    background-color: #CF6666;
+    color: #fff;
+ }
+
+ #gallery-text p{
+    font-size: 0.75rem;
+    color: #CF6666;
+    margin-bottom: 0.3125rem;
+ }
+
+ #gallery-text h3{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 1.5625rem;
+ }
+
+@media screen and (min-width: 48rem) {
+
+#gallery-box-1, #gallery-box-4  {
+    margin-top: 6.25rem;
+ }
+
+#gallery-box-2, #gallery-box-3 {
+    margin-top: 4.8125rem;
+ }
+
+ .item p {
+    font-size: 0.625rem;
+    color: #CF6666;
+    padding-top: 0.3125rem;
+    text-align: center;
+ }
+
+ .item h3, .item h4 {
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+ }
+
+ .button {
+    width: 6.875rem;
+    height: 1.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.9375rem;
+ }
+
+ #gallery-text h3{
+   font-size: 1.25rem;
+   font-weight: 100;
+   margin-bottom: 1.5625rem;
+}
+}
+
+@media screen and (min-width: 75rem) {
+
+    #gallery-box-1 {
+       margin-top: 6.25rem;
+    }
+   
+    .item p {
+       font-size: 0.875rem;
+       color: #CF6666;
+       padding-top: 0.3125rem;
+       text-align: center;
+    }
+   
+    .item h3, .item h4 {
+       font-size: 1.5rem;
+       font-weight: 100;
+       padding-top: 0.625rem;
+       padding-bottom: 0.625rem;
+       text-align: center;
+    }
+   
+    .button {
+       width: 10rem;
+       height: 2.5rem;
+       font-size: 1.25rem;
+       border-radius: 1.5625rem;
+    }
+
+    #gallery-text h3{
+      font-size: 1.75rem;
+      font-weight: 100;
+      margin-bottom: 1.5625rem;
+   }
+   }
+
+   /* 3. Footer - mobile */
+#footer-hero {
+   height: 17.5rem;
+   background-color: #C12E2E;
+   /* background-image: url(../images/footer-bck_bwxfmd_c_scale\,w_1200.jpg); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+   font-size: 0.625rem;
+   margin-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+#sns {
+   padding-top: 0.625rem;
+   margin-bottom: 1.25rem;
+}
+
+#sns img {
+   width: 1.5625rem;
+   height: 1.5625rem;
+   margin-right: 0.9375rem;
+}
+
+#sns a {
+   cursor: pointer;
+}
+
+#footer-hero h3 {
+   margin-top: 1.875rem;
+   font-size: 1.875rem;
+   font-weight: 900;
+   letter-spacing: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0rem;
+}
+
+#footer-contact-info p {
+   margin-bottom: 1.25rem;
+   line-height: 1.125rem;
+   font-size: 0.6875rem;
+}
+
+#footer-nav {
+   display: none;
+}
+
+#footer-nav ul li a:hover {
+   color: #000000;
+   font-weight: 700;
+}
+
+/* 8. Footer - Tablet */
+
+@media screen and (min-width: 48rem) { 
+
+   #footer-nav {
+       display: inline;
+    }
+
+    #footer-nav {
+       margin-top: 2.5rem;
+       column-count: 6;
+       text-align: center;
+    }
+ 
+    #footer-nav ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+    }
+ 
+    #footer-nav ul li a {
+       color: #fff;
+    }
+ 
+    #footer-nav ul li {
+       margin-bottom: 1.25rem;
+    } 
+}
+
+@media screen and (min-width: 75rem) { 
+   #footer-hero {
+       height: 26.25rem;
+       background-color: #C12E2E;
+       /* background-image: url(../images/footer-bck_bwxfmd_c_scale\,w_1200.jpg); */
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       color: #ffffff;
+       padding-bottom: 5rem;
+   }
+   
+   #footer-hero h3 {
+       margin-top: 3.125rem;
+       font-size: 2.75rem;
+       font-weight: 900;
+       letter-spacing: 0.75rem;
+       margin-bottom: 1.125rem;
+    }
+    #footer-hero p {
+       font-size: 1.25rem;
+       line-height: 1.875rem;
+       font-weight: 100;
+    }
+
+   #sns {
+       padding-top: 0.625rem;
+       margin-bottom: 1.25rem;
+   }
+   #sns img {
+       width: 2.1875rem;
+       height: 2.1875rem;
+       margin-right: 1.5625rem;
+   }
+
+   #footer-privacy p {
+       font-size: 0.875rem;
+   }
+
+   #footer-nav ul li {
+       font-size: 1rem;
+       font-weight: 100;
+       padding-top: 1.25rem;
+   }
+}
