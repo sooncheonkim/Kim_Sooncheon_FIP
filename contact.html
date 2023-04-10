@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="css/grid-contact.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <title>The Best beverage - ORBITZ!</title>
+</head>
+
+<body>
+    <h1 class="hidden">Welcome to the best beverage - ORBITZ</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-5 m-col-end-13 l-col-start-4 l-col-end-13">
+             <h2 class="hidden">Main Navigation</h2>
+                 <button id="button"></button>
+                 <div id="burger-con">
+                    <ul id="burger-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="#">ORBITZ 2.0</a></li>
+                        <li><a href="#">MAGAZINE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#">Log-in</a></li>
+                    </ul>
+                 </div>
+            </nav>
+            <div id="logo" class="col-start-1 col-end-4 m-col-sart-1 m-col-end-4 l-col-start-1 l-col-end-3">
+                <a href="index.html"><img src="images/logo-red.svg" alt="ORBITZ"></a>
+            </div>
+        </header>
+     </div>
+
+    <section id="contact-box" class="grid-con">
+        <h2 class="hidden">Please make your account</h2>
+        <div id="contact-form" class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
+            <form action="email.php" method="POST" enctype="text/plain">
+                <p>Email Address</p>
+                <input name="e-mail" type="text" placeholder="">
+                <button>Send Verification Code</button>
+
+                <p id="first-name">First Name</p>
+                <input name="First Name" type="text" placeholder="">
+                <p>Last Name</p>
+                <input name="First Name" type="text" placeholder="">
+                <p>Password</p>
+                <input name="Password" type="text" placeholder="">
+                <input name="submit" type="submit" value="SUBMIT">
+            </form>
+        </div>
+
+        <!-- hidden in mobile -->
+        <div id="contact-image" class="col-span-full m-col-start-7 m-col-end-13 l-col-start-6 l-col-end-11">
+            <img sizes="100vw" srcset="
+            images/custamizing-can-contact_mvtrtt_c_scale,w_320.jpg 320w,
+            images/custamizing-can-contact_mvtrtt_c_scale,w_774.jpg 774w"
+            src="images/custamizing-can-contact_mvtrtt_c_scale,w_774.jpg" alt="orbitz drink">
+        </div>
+    </section>
+
+    <footer id="footer-hero">
+        <div class="grid-con">
+           <section id="footer-contact-info" class="col-span-full m-col-start-2 m-col-end-5">
+            <h3>ORBITZ</h3>
+            <p>1924 BLVD Cedarhollow, <br>
+               London, ON. <br>
+               N5X 0K3</p>
+            <p>
+                Tel: +1 871-123-4567<br>
+                E-mail: info@drinkorbitz.com
+            </p>
+           </section>
+        <nav id="footer-nav" class="col-span-full m-col-start-6 m-col-end-12 l-col-start-5 l-col-end-12">
+            <h2 class="hidden">Footer Nav</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#">ORBITZ 2.0</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">Log-in</a></li>
+            </ul>
+        </nav>
+
+        <div id="footer-privacy" class="col-span-full m-col-start-2 m-col-end-12 line-seperator">
+            <p class="col-start-1 col-end-3">Copyright by Orbitz Corp.</p>
+            <div id="sns">
+                <a href="#"><img src="images/instagram-green.svg" alt="instagram" class="sns"></a>
+                <a href="#"><img src="images/twitter-green.svg" alt="twitter" class="sns"></a>
+                <a href="#"><img src="images/linkedin-green.svg" alt="linkedin" class="sns"></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
