@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.12 16.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fffcfc;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <g id="Top_Arrow" data-name="Top Arrow">
+      <g id="arrow">
+        <path id="_多边形_1" data-name="多边形 1" class="cls-1" d="M4,0l4,7H0L4,0Z"/>
+        <line id="_直线_21" data-name="直线 21" class="cls-2" x1="4" y1="6" x2="4" y2="14"/>
+      </g>
+    </g>
+  </g>
+</svg>
