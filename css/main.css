@@ -364,6 +364,9 @@ input, textarea {
 #best-heading-box {
     height: 4.375rem;
     align-self: end;
+    grid-row: 1/1;
+    margin-left: 20px;
+    margin-right: -40px;
 }
 
 #best-gallery-box .grid-con div {
@@ -374,7 +377,7 @@ input, textarea {
     background-color: #ffffff;
     padding-top: 0.5rem;
     padding-left: 0.9375rem;
-    border-radius: 0.625rem;
+    border-radius: 5px;
 }
 
 #best-img-text h2{
@@ -430,6 +433,7 @@ input, textarea {
     #best-heading-box {
         height: 9.375rem;
         align-self: end;
+        margin: 0;
         
         /* margin-top: -5rem; */
         /* margin-bottom: 1.25rem; */
